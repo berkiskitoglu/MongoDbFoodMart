@@ -1,0 +1,45 @@
+﻿@model List<ResultProductWithCategoryDto>
+
+@{
+    ViewData["Title"] = "ProductList";
+    Layout = "~/Views/Default/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Ürün Paneli</div>
+            </div>
+            <form method="post">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ürün Adı</th>
+                                <th scope="col">Fiyat</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Görsel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Price ₺</td>
+                                    <td>@item.CategoryName</td>
+                                    <td><img src="@item.ImageUrl" style="height:100px;"/></td>
+                                </tr>
+                            }
+                           
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+

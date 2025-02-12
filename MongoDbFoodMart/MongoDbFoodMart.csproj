@@ -1,0 +1,103 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\mazer-1.0.0\**" />
+    <Compile Remove="wwwroot\sneat-1.0.0\**" />
+    <Content Remove="wwwroot\mazer-1.0.0\**" />
+    <Content Remove="wwwroot\sneat-1.0.0\**" />
+    <EmbeddedResource Remove="wwwroot\mazer-1.0.0\**" />
+    <EmbeddedResource Remove="wwwroot\sneat-1.0.0\**" />
+    <None Remove="wwwroot\mazer-1.0.0\**" />
+    <None Remove="wwwroot\sneat-1.0.0\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\css\demo.css.map" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\css\kaiadmin.css.map" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\css\plugins.css.map" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-brands-400.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-brands-400.woff2" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-regular-400.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-regular-400.woff2" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-solid-900.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\fontawesome\fa-solid-900.woff2" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\simple-line-icons\Simple-Line-Icons.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\fonts\summernote\summernote.woff2" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\examples\logo.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\examples\logo1.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\examples\logo2.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\examples\logoinvoice.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\kaiadmin\favicon.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\kaiadmin\icon.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\kaiadmin\logo_dark.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\kaiadmin\logo_light.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\logoproduct.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\logoproduct2.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\logoproduct3.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_blank_canvas_3rbb.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_creative_team_r90h.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_empty_xct9.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_Hello_qnas.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_not_found_60pq.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_no_data_qbuo.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_page_not_found_su7k.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_sign_in_e6hj.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_tabs_jf82.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_Taken_if77.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_update_uxn2.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\undraw\undraw_upgrade_06a0.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\img\visa.svg" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\core\jquery-3.7.1.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\core\popper.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\demo.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\kaiadmin.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\kaiadmin.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\bootstrap-notify\bootstrap-notify.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\bootstrap-toggle\bootstrap-toggle.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\chart-circle\circles.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\chart.js\chart.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\datatables\datatables.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\datepicker\bootstrap-datetimepicker.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\dropzone\dropzone.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\fullcalendar\fullcalendar.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\gmaps\gmaps.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jquery-scrollbar\jquery.scrollbar.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jquery.magnific-popup\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jquery.sparkline\jquery.sparkline.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jquery.validate\jquery.validate.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jsvectormap\jsvectormap.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\jsvectormap\world.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\list.js\list.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\moment\moment.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\owl-carousel\owl.carousel.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\select2\select2.full.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\sortable\sortable.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\sticky-sidebar\sticky-sidebar.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\summernote\summernote-lite.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\sweetalert\sweetalert.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\plugin\webfont\webfont.min.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\setting-demo.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\assets\js\setting-demo2.js" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\LICENSE" />
+    <None Include="wwwroot\kaiadmin-lite-1.2.0\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.18" />
+    <PackageReference Include="MongoDB.Bson" Version="3.1.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.30.0" />
+  </ItemGroup>
+
+</Project>
