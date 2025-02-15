@@ -1,0 +1,60 @@
+﻿@model List<ResultDiscountDto>
+
+@{
+    ViewData["Title"] = "DiscountList";
+    Layout = "~/Views/Default/AdminLayout.cshtml";
+    int count = 0;
+
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">İndirim Paneli</div>
+            </div>
+            <form method="post">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">İndirim Oranı</th>
+                                <th scope="col">Başlık</th>
+                                <th scope="col">Görsel</th>
+                                <th scope="col">Sil</th>
+                                <th scope="col">Güncelle</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@item.Rate</td>
+                                    <td>@item.Title</td>
+                                    <td><img src="@item.ImageUrl" style="height:100px;" /></td>
+                                    <td><a href="/Discount/DeleteDiscount/@item.DiscountID" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Discount/UpdateDiscount/@item.DiscountID" class="btn btn-warning">Güncelle</a></td>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </form>
+            <a href="/Discount/CreateDiscount/" class="btn btn-outline-info" style="width:180px; height:40px; margin:10px">Yeni İndirim Girişi</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

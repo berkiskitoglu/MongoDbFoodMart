@@ -10,5 +10,7 @@ namespace MongoDbFoodMart.Services.ProductServices
         Task DeleteProductAsync(string productID);
         Task<GetByIDProductDto> GetByIDProductAsync(string productID);
         Task<List<ResultProductWithCategoryDto>> GetAllProductWithCategoryAsync();
+
+        Task<List<ResultProductWithCategoryDto>> GetProductByCategoryIDAsync(string id);
     }
 }

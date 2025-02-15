@@ -29,7 +29,7 @@ namespace MongoDbFoodMart.Controllers
         public async Task<IActionResult> CreateFeatureSlider(CreateFeatureDto createFeatureDto)
         {
             await _featureService.CreateFeatureAsync(createFeatureDto);
-            return RedirectToAction("FeatureList");
+            return RedirectToAction("FeatureSliderList");
         }
 
   

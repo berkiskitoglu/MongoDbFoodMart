@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDbFoodMart.Dtos.ProductDtos;
 using MongoDbFoodMart.Entities;
@@ -53,6 +54,19 @@ namespace MongoDbFoodMart.Services.ProductServices
             var value = await _productCollection.Find(x => x.ProductID == productID).FirstOrDefaultAsync();
             return _mapper.Map<GetByIDProductDto>(value);
         }
+
+        public async Task<List<ResultProductWithCategoryDto>> GetProductByCategoryIDAsync(string id)
+        {
+            var values = await _productCollection.Find(x => x.CategoryID == id).ToListAsync();
+            foreach (var item in values)
+            {
+                item.Category = await _categoryCollection.Find(x => x.CategoryID == id).FirstOrDefaultAsync();
+            }
+            return _mapper.Map<List<ResultProductWithCategoryDto>>(values);
+        }
+
+       
+
 
         public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {

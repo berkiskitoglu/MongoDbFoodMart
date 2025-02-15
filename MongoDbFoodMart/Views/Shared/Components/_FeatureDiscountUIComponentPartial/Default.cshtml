@@ -1,23 +1,29 @@
-﻿<div class="banner-ad bg-success-subtle block-2" style="background:url('/FoodMart-1.0.0/images/ad-image-1.png') no-repeat;background-position: right bottom">
+﻿@model List<ResultDiscountDto>
+
+@foreach (var item in Model.Take(1))
+{
+    <div class="banner-ad bg-success-subtle block-2" style="background:url('@item.ImageUrl') no-repeat;background-position: right bottom">
+        <div class="row banner-content p-5">
+
+            <div class="content-wrapper col-md-7">
+                <div class="categories  mb-3 pb-3"> %@item.Rate İndirim</div>
+                <a href="#" class="d-flex align-items-center nav-link">Sepete Ekle <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+            </div>
+
+        </div>
+    </div>
+  }  
+
+@foreach (var item2 in Model.Skip(1).Take(1))
+{
+<div class="banner-ad bg-danger block-3" style="background:url('@item2.ImageUrl') no-repeat;background-position: right bottom">
     <div class="row banner-content p-5">
 
-        <div class="content-wrapper col-md-7">
-            <div class="categories sale mb-3 pb-3">20% off</div>
-            <h3 class="banner-title">Fruits & Vegetables</h3>
-            <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
-        </div>
+                <div class="content-wrapper col-md-7">
+                    <div class="categories  mb-3 pb-3"> %@item2.Rate İndirim</div>
+                    <a href="#" class="d-flex align-items-center nav-link">Sepete Ekle <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
+                </div>
 
     </div>
 </div>
-
-<div class="banner-ad bg-danger block-3" style="background:url('/FoodMart-1.0.0/images/ad-image-2.png') no-repeat;background-position: right bottom">
-    <div class="row banner-content p-5">
-
-        <div class="content-wrapper col-md-7">
-            <div class="categories sale mb-3 pb-3">15% off</div>
-            <h3 class="item-title">Baked Products</h3>
-            <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24"><use xlink:href="#arrow-right"></use></svg></a>
-        </div>
-
-    </div>
-</div>
+    }

@@ -1,0 +1,46 @@
+﻿@model GetByIDDiscountDto
+
+@{
+    ViewData["Title"] = "UpdateDiscount";
+    Layout = "~/Views/Default/AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">İndirim Ekleme Paneli</div>
+            </div>
+            <form method="post">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <td>
+                            <input type="hidden" asp-for="DiscountID"/>
+                            <label>İndirim Oranı</label>
+                            <input type="text" asp-for="Rate" class="form-control">
+                            <br />
+
+                            <label>Başlık</label>
+                            <input type="text" asp-for="Title" class="form-control">
+                            <br />
+                            <label>Görsel</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control">
+                            <br />
+                            <label>Açıklama</label>
+                            <textarea class="form-control" rows="5" asp-for="Description"></textarea>
+                        </td>
+
+                    </table>
+                </div>
+                <button class="btn btn-outline-primary" style="margin:10px">İndirim Güncelle</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

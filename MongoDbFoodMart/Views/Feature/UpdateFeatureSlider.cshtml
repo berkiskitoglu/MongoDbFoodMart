@@ -1,0 +1,44 @@
+﻿@model GetByIDFeatureDto
+
+@{
+    ViewData["Title"] = "UpdateFeatureSlider";
+    Layout = "~/Views/Default/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Slider Güncelleme Paneli</div>
+            </div>
+            <form method="post">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <td>
+                            <input type="hidden" asp-for="FeatureID"></input>
+
+                            <label>Başlık</label>
+                            <input type="text" asp-for="Title" class="form-control">
+                            <br />
+                            <label>Alt Başlık</label>
+                            <input type="text" asp-for="Subtitle" class="form-control">
+                            <br />
+                            <label>Açıklama</label>
+                            <textarea class="form-control" rows="5" asp-for="Description"></textarea>
+                            <br />
+
+                            <label>Görsel</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control">
+                        </td>
+
+                    </table>
+                </div>
+                <button class="btn btn-outline-primary" style="margin:10px">Slider Güncelle</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+

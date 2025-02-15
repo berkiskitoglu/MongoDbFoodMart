@@ -3,6 +3,7 @@ using MongoDbFoodMart.Dtos.CategoryDtos;
 using MongoDbFoodMart.Dtos.DiscountDtos;
 using MongoDbFoodMart.Dtos.FeatureDtos;
 using MongoDbFoodMart.Dtos.ProductDtos;
+using MongoDbFoodMart.Dtos.SellingDtos;
 using MongoDbFoodMart.Entities;
 
 namespace MongoDbFoodMart.Mapping
@@ -31,7 +32,18 @@ namespace MongoDbFoodMart.Mapping
             CreateMap<Product, UpdateProductDto>().ReverseMap();
             CreateMap<Product, GetByIDProductDto>().ReverseMap();
 
+            CreateMap<Selling, ResultSellingDto>().ReverseMap();
+            CreateMap<Selling, CreateSellingDto>().ReverseMap();
+            CreateMap<Selling, UpdateSellingDto>().ReverseMap();
+            CreateMap<Selling, GetByIDSellingDto>().ReverseMap();
+
+
             CreateMap<Product, ResultProductWithCategoryDto>().ForMember(x => x.CategoryName, y => y.MapFrom(z => z.Category.Name));
+            CreateMap<Selling, ResultSellingWithProductDto>()
+     .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Product.Name))
+     .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Product.Price))
+     .ForMember(dest => dest.ImageUrl, opt => opt.MapFrom(src => src.Product.ImageUrl));
+
         }
     }
 }

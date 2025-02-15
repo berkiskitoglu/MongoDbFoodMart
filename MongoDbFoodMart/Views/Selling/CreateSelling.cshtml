@@ -1,0 +1,37 @@
+﻿@model CreateSellingDto
+
+@{
+    ViewData["Title"] = "CreateSelling";
+    Layout = "~/Views/Default/AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Satış Ekleme Paneli</div>
+            </div>
+            <form method="post">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <td>
+                            <label>Miktar</label>
+                            <input type="text" asp-for="Count" class="form-control">
+                            <br />
+                            <label>Ürün</label>
+                            <input type="text" asp-for="ProductID" class="form-control">
+                            <br />
+                            <label>Toplam Fiyat</label>
+                            <input type="text" asp-for="TotalPrice" class="form-control">
+                        </td>
+
+                    </table>
+                </div>
+                <button class="btn btn-outline-primary" style="margin:10px">Satış Ekle</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
