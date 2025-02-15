@@ -1,58 +1,67 @@
 # FreshMart Projesi
 🛒 Bu projede taze gıda ürünleri satan bir marketin dinamik web sitesi ve admin paneli geliştirilmiştir. Kullanıcılar ekledikleri ürünleri satış tablosunda görüntüleyebilir ve indirim kodlarını e-posta yoluyla alabilirler. Kullanıcı dostu arayüzü sayesinde alışveriş ve yönetim işlemleri kolayca gerçekleştirilebilir.
 
-# 🍜 Web Sitesi
-📌 Anasayfa: Kullanıcılar ürünler ve güncel indirimler hakkında bilgi alabilir, ürünleri inceleyebilir ve indirim kodunu e-posta ile temin edebilir.
+# 🌐 Web Sitesi
+🏠 Ana Sayfa: Kullanıcılar, ürünler ve güncel kampanyalar hakkında bilgi edinebilir, ürünleri keşfedebilir ve indirim kodlarını e-posta yoluyla alabilir.
 
-🛍️ Öne Çıkanlar: En popüler ürünler, slider alanında sergilenir.
+🎡 Popüler Ürünler: En çok ilgi gören ürünler, dinamik bir slider alanında sergilenir.
 
-💸 İndirimler: Aktif indirim kampanyaları ve fırsatlar gösterilir.
+💰 Fırsatlar & Kampanyalar: Mevcut indirimler ve avantajlı fırsatlar detaylı olarak gösterilir.
 
-📦 Kategoriler: Ürünlerin sınıflandırıldığı kategoriler listelenir.
+📂 Kategoriler: Ürünler belirli kategorilere ayrılmış şekilde listelenir.
 
-🔎 Kategoriye Göre Ürünler: Seçilen kategoriye ait ürünler listelenir.
+🔍 Kategori Bazlı Ürünler: Kullanıcılar, belirli bir kategoriyi seçerek ilgili ürünleri inceleyebilir.
 
-🍅 Taze Ürünler: Son eklenen 10 ürün gösterilir.
+🍏 Yeni Gelenler: Son eklenen 10 ürün, tazeliğiyle öne çıkar.
 
-🛒 Sepet İşlemleri: Kullanıcı, istediği ürünleri sepete ekleyebilir. Sepete eklenen ürünler satış tablosuna kaydedilir.
+🛒 Sepet Yönetimi: Kullanıcılar istedikleri ürünleri sepete ekleyebilir ve satın alma işlemlerini tamamlayabilir. Sepete eklenen ürünler, satış kaydına işlenir.
 
-📋 Tüm Ürünler: Kullanıcılar, tüm ürünleri listeleyebilir ve arama çubuğu yardımıyla ürünleri filtreleyebilir.
+📋 Ürün Listesi: Tüm ürünler tek bir sayfada görüntülenebilir ve filtreleme seçenekleriyle arama yapılabilir.
 
-🔖 İndirimli Ürünler: Güncel olarak indirime giren 2 ürün gösterilir.
+🏷️ Özel İndirimler: Güncel olarak indirime giren iki ürün kullanıcıya sunulur.
 
-📈 En Çok Satılan Ürünler: Satış tablosunda en fazla tercih edilen 6 ürün listelenir.
+📊 En Çok Satılanlar: Satış verilerine göre en çok tercih edilen 6 ürün listelenir.
 
-📧 E-posta ile İndirim Kodu: Kullanıcılar adlarını ve e-posta adreslerini girerek indirim kodlarını alabilirler.
+📩 E-posta ile İndirim Kodu: Kullanıcılar, adlarını ve e-posta adreslerini girerek özel indirim kodlarını alabilirler.
 
-📢 Footer Alanı: Ürün önerileri, hizmet bilgileri ve marketle ilgili detaylar paylaşılır.
+📢 Alt Bilgi (Footer): Market hizmetleri, öneriler ve önemli bilgiler burada yer alır.
 
-# 💻 Admin Paneli
-🔹 Kategoriler: Yeni kategoriler eklenebilir, mevcut kategoriler düzenlenebilir veya silinebilir.
+# 🖥️ Yönetim Paneli
+Site üzerindeki tüm içerikler ve işlemler dinamik olarak yönetilebilir.
 
-🔹 Ürün Yönetimi: Ürün ekleme, güncelleme ve silme işlemleri yapılabilir.
+📑 Kategoriler Yönetimi
+Yeni kategoriler ekleyebilir, mevcut olanları güncelleyebilir veya silebilirsiniz.
 
-🔹 İndirim Yönetimi: Geçerli indirim kampanyaları düzenlenebilir.
+🛒 Ürün Yönetimi
+Ürün ekleme, güncelleme ve silme işlemlerini kolayca gerçekleştirebilirsiniz.
 
-🔹 Öne Çıkan Ürünler: Ana sayfadaki slider içeriği güncellenebilir.
+🏷️ Kampanyalar & İndirimler
+Geçerli indirimleri düzenleyebilir ve kampanya yönetimini sağlayabilirsiniz.
 
-🔹 Satış Geçmişi: Kullanıcıların satın alma işlemleri kayıt altına alınır. Ürün adı, miktarı ve toplam fiyatı backend tarafında hesaplanarak tabloya eklenir.
+🚀 Öne Çıkan İçerikler
+Ana sayfadaki öne çıkan ürünler ve slider içeriği güncellenebilir.
 
-# 🛠️ Kullanılan Teknolojiler
+📊 Satış Kayıtları
+Kullanıcıların yaptığı alışverişler burada listelenir. Yeni satış eklenebilir, düzenlenebilir veya silinebilir.
+📌 Satış eklenirken, ürün adı ve miktarı girilir. Backend tarafında toplam fiyat hesaplanarak eklenir.
 
-🚀 Asp.Net Core 6.0 ile geliştirilmiştir.
+🛠️ Teknoloji ve Araçlar
 
-📂 MongoDB kullanılmıştır.
+🔹 Asp.Net Core 6.0 – Güçlü ve modern backend altyapısı
 
-🔹 DTO (Data Transfer Object) yapısı kullanılmıştır.
+🔹 MongoDB – NoSQL veri tabanı yönetimi
 
-🛠️ CRUD işlemleri (Create, Read, Update, Delete) uygulanmıştır.
+🔹 DTO (Data Transfer Object) – Veri transferini optimize eden yapı
 
-📦 AutoMapper kullanılarak veri dönüşümleri optimize edilmiştir.
+🔹 CRUD İşlemleri – Ekleme, silme, güncelleme ve okuma işlemleri
 
-📧 MailKit ile gerçek zamanlı e-posta gönderimi sağlanmıştır.
+🔹 AutoMapper – Veri dönüşümlerini kolaylaştıran araç
 
-📜 View Components yapıları kullanılmıştır.
+🔹 MailKit – Gerçek zamanlı e-posta gönderimi
 
+🔹 View Components ile modüler yapı
+
+Bu şekilde hem ikonları hem de açıklamaları yeniledim. Eğer belirli bir format veya farklı ikonlar
 # 📷Görseller
 ![](https://github.com/berkiskitoglu/MongoDbFoodMart/blob/master/images/default.png)
 ![](https://github.com/berkiskitoglu/MongoDbFoodMart/blob/master/images/mail.png)
