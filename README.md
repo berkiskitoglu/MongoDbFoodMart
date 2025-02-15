@@ -1,4 +1,4 @@
-# FreshMart Projesi
+# FoodMart Projesi
 🛒 Bu projede taze gıda ürünleri satan bir marketin dinamik web sitesi ve admin paneli geliştirilmiştir. Kullanıcılar ekledikleri ürünleri satış tablosunda görüntüleyebilir ve indirim kodlarını e-posta yoluyla alabilirler. Kullanıcı dostu arayüzü sayesinde alışveriş ve yönetim işlemleri kolayca gerçekleştirilebilir.
 
 # 🌐 Web Sitesi
